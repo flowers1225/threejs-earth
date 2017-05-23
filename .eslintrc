@@ -1,0 +1,31 @@
+// https://github.com/feross/standard/blob/master/docs/RULES-zhcn.md
+{
+  "parser": "babel-eslint",
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "wx": false,
+    "$": false,
+    "_czc": false,
+    "dat": false
+  },
+  "rules": {
+    "indent": [2, 4, {
+      "SwitchCase": 1
+    }],
+    "semi": [2, "always"],
+    "one-var": [2, {
+      "initialized": "never"
+    }],
+    "camelcase": [1, { "properties": "always" }],
+    "no-console": 0,
+    "handle-callback-err": 0,
+    "no-undef": 0,
+    "no-cond-assign": 0,
+    "no-constant-condition": 0
+  }
+}
