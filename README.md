@@ -13,4 +13,4 @@ $ gulp sync
 
 ```
 
-![](https://github.com/flowers1225/threejs-earth/blob/master/src/earth.png)
+![](https://github.com/flowers1225/threejs-earth/blob/master/src/img/earth.png)
