@@ -63,6 +63,7 @@ class SceneView {
         this.controls.noPan = true;
         this.controls.enabled = true;
 
+        console.log(this.controls);
         this.scene.add(createBg());
 
         this.group = new THREE.Group();
@@ -72,8 +73,8 @@ class SceneView {
         this.$el.append(this.renderer.domElement);
 
         this.earth = createEarth();
-        this.cloud1 = createCloud(25.1, 'cloud1');
-        this.cloud2 = createCloud(25.2, 'cloud2');
+        this.cloud1 = createCloud(25.3, 'cloud1');
+        this.cloud2 = createCloud(25.6, 'cloud2');
         this.cloud2.rotation.y = Math.PI;
 
         this.group.add(this.earth);
