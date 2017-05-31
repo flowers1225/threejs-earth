@@ -63,7 +63,6 @@ class SceneView {
         this.controls.noPan = true;
         this.controls.enabled = true;
 
-        console.log(this.controls);
         this.scene.add(createBg());
 
         this.group = new THREE.Group();
