@@ -46,7 +46,7 @@ gulp.task("webpack", function(callback) {
 
     var myConfig = Object.create(webpackConfig);
 
-    myConfig.output.filename = distPath + 'js/main.js';
+    // myConfig.output.filename = distPath + 'js/main.js';
 
     // run webpack
     webpack(myConfig, function(err, stats) {

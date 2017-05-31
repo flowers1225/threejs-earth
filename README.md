@@ -2,7 +2,7 @@
 
 基于threejs绘制的地球
 
-> (因为某些不可以抗原因，其它功能及资源并未使用，只给出了绘制地球代码，仅供大家学习参考)
+> (因为某些不可抗原因，其它功能及资源并未使用，只给出了绘制地球代码，仅供大家学习参考)
 
 ## Setup
 
@@ -10,6 +10,8 @@
 $ git clone https://github.com/flowers1225/threejs-earth.git
 
 $ npm install
+
+$ webpack --config webpack.dll.js （生成manifest.json文件）
 
 $ gulp sync
 

@@ -1,0 +1,12 @@
+{
+  "name": "vendor_library",
+  "content": {
+    "./node_modules/three/build/three.js": 1,
+    "./node_modules/three/examples/js/controls/TrackballControls.js": 2,
+    "./node_modules/three/examples/js/postprocessing/EffectComposer.js": 3,
+    "./node_modules/three/examples/js/postprocessing/RenderPass.js": 4,
+    "./node_modules/three/examples/js/postprocessing/ShaderPass.js": 5,
+    "./node_modules/three/examples/js/postprocessing/MaskPass.js": 6,
+    "./node_modules/three/examples/js/shaders/CopyShader.js": 7
+  }
+}
