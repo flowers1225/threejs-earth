@@ -11,9 +11,7 @@ $ git clone https://github.com/flowers1225/threejs-earth.git
 
 $ npm install
 
-$ webpack --config webpack.dll.js （生成manifest.json文件）
-
-$ gulp sync
+$ npm run dev
 
 ```
 
