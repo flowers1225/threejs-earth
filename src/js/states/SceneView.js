@@ -26,6 +26,8 @@ import {createOuterGlow, AdditiveBlendShader} from '../prefabs/outerGlow';
 
 import {createBg} from '../prefabs/createBg';
 
+import {createPoints} from '../prefabs/points';
+
 class SceneView {
     constructor (el) {
         this.$el = el;
@@ -89,6 +91,47 @@ class SceneView {
         this.createOuterFlow();
 
         this.animate();
+
+        this.createDot();
+    }
+
+    createDot () {
+        let coordinate = this.latLongToCoordinate(61.6898722005, 116.1914062500, 25);
+
+        let latLong = this.coordinateToLatLong(coordinate, 25);
+
+        console.log(`lat: ${latLong.lat}, long: ${latLong.long}`);
+
+        console.log(coordinate);
+
+        this.scene.add(createPoints(coordinate, 'point'));
+    }
+
+    latLongToCoordinate (lat, long, radius) {
+        // let lat = -14;  // 纬度
+        // let long = -58; // 经度
+        let phi = (90 - lat) * (Math.PI / 180);
+        let theta = (long + 180) * (Math.PI / 180);
+        let y = radius * Math.cos(phi);
+        let temp = radius * Math.sin(phi);
+        let x = -temp * Math.cos(theta);
+        let z = temp * Math.sin(theta);
+
+        return {
+            x: x,
+            y: y,
+            z: z
+        };
+    }
+
+    coordinateToLatLong (coordinate, radius) {
+        let lat = 90 - (Math.acos(coordinate.y / radius)) * 180 / Math.PI;
+        let long = ((270 + (Math.atan2(coordinate.x, coordinate.z)) * 180 / Math.PI) % 360);
+
+        return {
+            lat: lat,
+            long: long
+        };
     }
 
     render () {
