@@ -110,7 +110,7 @@ gulp.task('default', ['images', 'less', 'webpack', 'media'], function() {
     gulp.watch(imageSrc, ['images']);
     
     gulp.watch(lessDict, ['less']);
-    
+
     gulp.watch(jsSrc, ['webpack']);
 
     gulp.watch(media, ['media']);
