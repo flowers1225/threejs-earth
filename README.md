@@ -6,7 +6,9 @@
 ## lib
 
 React: v17
+
 r3f: v5.3
+
 threejs: v122
 
 
