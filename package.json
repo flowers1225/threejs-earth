@@ -1,45 +1,54 @@
 {
-  "name": "tx-qqx",
-  "version": "0.0.1",
+  "name": "react-r3f-earth",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@juggle/resize-observer": "^3.3.0",
+    "@react-three/drei": "^4.0.4",
+    "@react-three/fiber": "^6.0.9",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^12.20.7",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "glslify": "^7.1.1",
+    "leva": "^0.9.3",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-three-fiber": "5.3.22",
+    "typescript": "^4.2.3",
+    "web-vitals": "^1.1.1"
+  },
   "scripts": {
-    "dev": "webpack --config webpack.dll.js && gulp sync"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.2.2",
-    "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.3.3",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.0.0",
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "exports-loader": "^0.6.4",
-    "file-loader": "^0.11.1",
-    "gulp": "*",
-    "gulp-copy": "0.0.2",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-imagemin": "^3.0.2",
-    "gulp-less": "^3.1.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-qn": "^0.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.7",
-    "imports-loader": "^0.6.5",
-    "install": "^0.8.9",
-    "less": "^2.7.0",
-    "natives": "^1.1.3",
-    "npm": "^4.5.0",
-    "script-loader": "^0.7.0",
-    "style-loader": "^0.13.0",
-    "url-loader": "*",
-    "webpack": "^1.12.2"
-  },
-  "dependencies": {
-    "three": "^0.84.0"
+    "@types/three": "^0.127.0",
+    "three": "0.127.0"
   }
 }

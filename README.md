@@ -1,18 +1,24 @@
-# threejs-earth
+# react-r3f-earth
 
-基于threejs绘制的地球
+基于react-r3f-threejs绘制的地球
 
-> (因为某些不可抗原因，其它功能及资源并未使用，只给出了绘制地球代码，仅供大家学习参考)
+
+## lib
+
+React: v17
+r3f: v5.3
+threejs: v122
+
 
 ## Setup
 
 ```
-$ git clone https://github.com/flowers1225/threejs-earth.git
+$ https://github.com/flowers1225/threejs-earth/tree/react-r3f-earth
 
 $ npm install
 
-$ npm run dev
+$ npm start
 
 ```
 
-![](https://github.com/flowers1225/threejs-earth/blob/master/src/img/earth.png)
+![](https://github.com/flowers1225/threejs-earth/blob/react-r3f-earth/readme-img.jpg)
