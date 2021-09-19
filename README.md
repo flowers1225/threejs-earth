@@ -2,6 +2,7 @@
 
 基于react-r3f-threejs绘制的地球
 
+live: [https://threejs-earth.4everland.app/](https://threejs-earth.4everland.app/)
 
 ## lib
 
